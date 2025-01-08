@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Formatting Elements Reference</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f5f5f5;
+        }
+        .category {
+            font-weight: bold;
+            background-color: #eef;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Formatting Elements Reference</h1>
+    <table>
+        <tr>
+            <th>Element Type</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr class="category">
+            <td colspan="3">Text Styling</td>
+        </tr>
+        <tr>
+            <td>&lt;b&gt;</td>
+            <td>Draws attention to text without conveying extra importance</td>
+            <td><b>Bold text</b></td>
+        </tr>
+        <tr>
+            <td>&lt;strong&gt;</td>
+            <td>Indicates strong importance, seriousness, or urgency</td>
+            <td><strong>Strongly emphasized text</strong></td>
+        </tr>
+        <tr>
+            <td>&lt;i&gt;</td>
+            <td>Represents text in an alternate voice or mood</td>
+            <td><i>Italic text</i></td>
+        </tr>
+        <tr>
+            <td>&lt;em&gt;</td>
+            <td>Emphasizes text with stress emphasis</td>
+            <td><em>Emphasized text</em></td>
+        </tr>
+        <tr>
+            <td>&lt;mark&gt;</td>
+            <td>Highlights text for reference purposes</td>
+            <td><mark>Highlighted text</mark></td>
+        </tr>
+        <tr>
+            <td>&lt;small&gt;</td>
+            <td>Represents side-comments and small print</td>
+            <td><small>Smaller text</small></td>
+        </tr>
+        <tr>
+            <td>&lt;u&gt;</td>
+            <td>Indicates text that should be stylistically different, like misspelled words</td>
+            <td><u>Underlined text</u></td>
+        </tr>
+        <tr>
+            <td>&lt;s&gt;</td>
+            <td>Represents text that is no longer accurate or relevant</td>
+            <td><s>Strikethrough text</s></td>
+        </tr>
+        <tr>
+            <td>&lt;sub&gt; and &lt;sup&gt;</td>
+            <td>Represents subscript and superscript text respectively</td>
+            <td>H<sub>2</sub>O and E=mc<sup>2</sup></td>
+        </tr>
+
+        <tr class="category">
+            <td colspan="3">Text Direction and Language</td>
+        </tr>
+        <tr>
+            <td>&lt;bdo&gt;</td>
+            <td>Overrides the current text direction</td>
+            <td><bdo dir="rtl">Right-to-left text</bdo></td>
+        </tr>
+        <tr>
+            <td>&lt;bdi&gt;</td>
+            <td>Isolates text that might be formatted in a different direction</td>
+            <td><bdi>Bi-directional text</bdi></td>
+        </tr>
+        <tr>
+            <td>&lt;dfn&gt;</td>
+            <td>Represents the defining instance of a term</td>
+            <td>The <dfn>HTML</dfn> is a markup language</td>
+        </tr>
+
+        <tr class="category">
+            <td colspan="3">Ruby Annotations</td>
+        </tr>
+        <tr>
+            <td>&lt;ruby&gt; and &lt;rt&gt;</td>
+            <td>Used for East Asian typography, showing pronunciation above characters</td>
+            <td>
+                <ruby>
+                漢 <rt>かん</rt>
+                字 <rt>じ</rt>
+                </ruby>
+            </td>
+        </tr>
+
+        <tr class="category">
+            <td colspan="3">Progress and Meter</td>
+        </tr>
+        <tr>
+            <td>&lt;progress&gt;</td>
+            <td>Represents the progress of a task</td>
+            <td><progress value="70" max="100">70%</progress></td>
+        </tr>
+        <tr>
+            <td>&lt;meter&gt;</td>
+            <td>Represents a scalar measurement within a known range</td>
+            <td><meter value="0.6">60%</meter></td>
+        </tr>
+
+        <tr class="category">
+            <td colspan="3">Quotation and Citation</td>
+        </tr>
+        <tr>
+            <td>&lt;blockquote&gt;</td>
+            <td>Represents content quoted from another source</td>
+            <td><blockquote>Long quotation block</blockquote></td>
+        </tr>
+        <tr>
+            <td>&lt;q&gt;</td>
+            <td>Indicates short inline quotation</td>
+            <td><q>Inline quotation</q></td>
+        </tr>
+        <tr>
+            <td>&lt;cite&gt;</td>
+            <td>Represents a reference to a creative work</td>
+            <td><cite>Source citation</cite></td>
+        </tr>
+        <tr>
+            <td>&lt;abbr&gt;</td>
+            <td>Represents an abbreviation or acronym</td>
+            <td><abbr title="Cascading Style Sheets">CSS</abbr></td>
+        </tr>
+
+        <tr class="category">
+            <td colspan="3">Code and Technical</td>
+        </tr>
+        <tr>
+            <td>&lt;code&gt;</td>
+            <td>Represents computer code</td>
+            <td><code>console.log("Hello");</code></td>
+        </tr>
+        <tr>
+            <td>&lt;pre&gt;</td>
+            <td>Preserves whitespace and line breaks</td>
+            <td><pre>Preformatted
+    text</pre></td>
+        </tr>
+        <tr>
+            <td>&lt;kbd&gt;</td>
+            <td>Represents keyboard input</td>
+            <td><kbd>Ctrl</kbd> + <kbd>S</kbd></td>
+        </tr>
+        <tr>
+            <td>&lt;var&gt;</td>
+            <td>Represents a variable in math or programming</td>
+            <td><var>variable</var></td>
+        </tr>
+        <tr>
+            <td>&lt;samp&gt;</td>
+            <td>Represents sample output from a computer program</td>
+            <td><samp>Program output</samp></td>
+        </tr>
+
+        <tr class="category">
+            <td colspan="3">Semantic Structure</td>
+        </tr>
+        <tr>
+            <td>&lt;article&gt;</td>
+            <td>Represents a self-contained composition</td>
+            <td>
+                <article>
+                    <h4>Article Title</h4>
+                    <p>Article content</p>
+                </article>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;figure&gt; and &lt;figcaption&gt;</td>
+            <td>Represents self-contained content with optional caption</td>
+            <td>
+                <figure>
+                    Content
+                    <figcaption>Caption</figcaption>
+                </figure>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;details&gt; and &lt;summary&gt;</td>
+            <td>Creates a disclosure widget with additional details</td>
+            <td>
+                <details>
+                    <summary>Click to expand</summary>
+                    Hidden content
+                </details>
+            </td>
+        </tr>
+
+        <tr class="category">
+            <td colspan="3">Other Elements</td>
+        </tr>
+        <tr>
+            <td>&lt;time&gt;</td>
+            <td>Represents a date and/or time</td>
+            <td><time datetime="2025-01-08">January 8, 2025</time></td>
+        </tr>
+        <tr>
+            <td>&lt;address&gt;</td>
+            <td>Represents contact information</td>
+            <td>
+                <address>
+                    Contact info<br>
+                    Example Street
+                </address>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;del&gt; and &lt;ins&gt;</td>
+            <td>Marks deleted and inserted text respectively</td>
+            <td><del>Deleted</del> <ins>Inserted</ins></td>
+        </tr>
+        <tr>
+            <td>&lt;hr&gt;</td>
+            <td>Represents a thematic break between paragraphs</td>
+            <td><hr></td>
+        </tr>
+        <tr>
+            <td>&lt;br&gt;</td>
+            <td>Produces a line break in text</td>
+            <td>Line 1<br>Line 2</td>
+        </tr>
+        <tr>
+            <td>&lt;wbr&gt;</td>
+            <td>Represents a word break opportunity</td>
+            <td>Long<wbr>word</td>
+        </tr>
+    </table>
+</body>
+</html>
